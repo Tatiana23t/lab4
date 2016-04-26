@@ -170,9 +170,5 @@ public class VectorContainer extends JPanel{
 		else
 			operat.addItem(operation[0]);
 	}
-	static private String selectedString(ItemSelectable is) {
-	    Object selected[] = is.getSelectedObjects();
-	    return ((selected.length == 0) ? "null" : (String)selected[0]);
-
-	  } 
+	
 }
