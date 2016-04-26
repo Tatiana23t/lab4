@@ -17,20 +17,18 @@ public class Vector {
 	public double getY(){
 		return y;
 		}
-	public void setX(double z){
-		x = z;
+	public void setX(double x){
+		this.x = x;
 	}
 	
-	public void setY(double z){
-		this.y = z;
+	public void setY(double y){
+		this.y = y;
 	}
 	public double lenght(){
 		//return x+y;
 		return Math.sqrt(x*x + y*y);
 		}
-	public Vector multiplicate(double k){
-		return new Vector(x*k,y*k);
-		}
+
 	public Vector multiplicate(Vector b){
 		return new Vector(x*b.getX(),y*b.getY());
 		}
