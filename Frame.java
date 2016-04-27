@@ -17,17 +17,11 @@ public class Frame extends JFrame{
 		setLocation((screenSize.width - windowSize.width) / 2, 
 				(screenSize.height - windowSize.height) / 2);
 		this.setName("Vector");
-		//Panel race = new Panel();
+
 		Container pane = getContentPane();
 		this.setLayout(new BoxLayout(pane,BoxLayout.Y_AXIS));
 		VectorContainer v = new VectorContainer();
 		pane.add(v);
-		//OperationContainer o = new OperationContainer();
-		//pane.add(o);
-		//ResultContainer r = new ResultContainer();
-		//pane.add(r);
 		this.repaint();
-		
-		//pane.add(p);
-	}
+		}
 }
